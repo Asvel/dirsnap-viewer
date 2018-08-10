@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>dirsnap-viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <script>
+    window.data = /* dirsnap data */JSON.parse(localStorage.getItem('data'))/* dirsnap data */;
+    [
+      'https://asvel.github.io/dirsnap-viewer/dist/dirsnap-viewer.js',
+      'https://gitee.com/asvel/dirsnap-viewer/raw/master/dist/dirsnap-viewer.js',
+      'http://localhost:8080/dirsnap-viewer.js',
+    ].forEach(function (src) {
+      let script = document.createElement('script');
+      script.setAttribute('src', src);
+      document.body.appendChild(script);
+    });
+  </script>
+</body>
+</html>

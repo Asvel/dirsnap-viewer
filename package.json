@@ -1,0 +1,26 @@
+{
+  "name": "dirsnap-viewer",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Asvel",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-serve --config webpack.config.js",
+    "build": "webpack --config webpack.config.js --mode=production"
+  },
+  "dependencies": {
+    "@types/react": "^16.4.8",
+    "@types/react-dom": "^16.0.7",
+    "csstips": "^0.3.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "typestyle": "^2.0.1"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.0",
+    "typescript": "^3.0.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-serve": "^2.0.2"
+  }
+}
