@@ -157,7 +157,7 @@ let formatSize = (() => {
   let suffixes = [' B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB'];
   let sizes = suffixes.map((x, i) => Math.pow(1024, i));
   return function (size: number): string {
-    let i = Math.floor(Math.log2(size) / 10);
+    let i = size && Math.floor(Math.log2(size) / 10);
     return Number((size / sizes[i]).toString().slice(0, 4)).toString() + " " + suffixes[i];
   };
 })();
