@@ -28,7 +28,7 @@ interface AppState {
 }
 
 class App extends React.Component<AppProps, AppState> {
-  constructor(props: { data: Data }) {
+  constructor(props: AppProps) {
     super(props);
     this.state = {
       path: parsePath(location.hash),
